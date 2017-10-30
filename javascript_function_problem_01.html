@@ -3,81 +3,33 @@
 <head>
     <script type="text/javascript">
 		
-		function A_Sudent(A_javascript = 90, A_python= 80, A_java = 50, A_ruby = 40, A_swift = 10){
+		function Sudent(javascript, python, java, ruby, swift){
 			
-			var A_average = (A_javascript + A_python + A_java + A_ruby + A_swift) / 5;
+			var average = (javascript + python + java + ruby + swift) / 5;
 			
-			var A_max = 0;
-			 A_max = (A_max > A_javascript) ? A_max : A_javascript;
-			 A_max = (A_max > A_python) ? A_max : A_python;
-			 A_max = (A_max > A_java) ? A_max : A_java;
-			 A_max = (A_max > A_ruby) ? A_max : A_ruby;
-			 A_max = (A_max > A_swift) ? A_max : A_swift;
+			var max = 0;
+			 max = (max > javascript) ? max : javascript;
+			 max = (max > python) ? max : python;
+			 max = (max > java) ? max : java;
+			 max = (max > ruby) ? max : ruby;
+			 max = (max > swift) ? max : swift;
 
-			 var A_min = 100;
-			 A_min = (A_min < A_javascript) ? A_min : A_javascript;
-			 A_min = (A_min < A_python) ? A_min : A_python;
-			 A_min = (A_min < A_java) ? A_min : A_java;
-			 A_min = (A_min < A_ruby) ? A_min : A_ruby;
-			 A_min = (A_min < A_swift) ? A_min : A_swift;
+			 var min = 100;
+			 min = (min < javascript) ? min : javascript;
+			 min = (min < python) ? min : python;
+			 min = (min < java) ? min : java;
+			 min = (min < ruby) ? min : ruby;
+			 min = (min < swift) ? min : swift;
 			 
-			 var c = 'A 학생의 평균 점수는 ' + A_average + ' , 최고 점수는 ' + A_max + ' , 최하 점수는 ' + A_min + ' 입니다.'
+			 var c = average + ' , 최고 점수는 ' + max + ' , 최하 점수는 ' + min + ' 입니다.'
 
 		
 			return c;
 		}
 
-		function B_Sudent(B_javascript = 90, B_python= 30, B_java = 100, B_ruby = 50, B_swift = 20){
-			
-			var B_average = (B_javascript + B_python + B_java + B_ruby + B_swift) / 5;
-			
-			var B_max = 0;
-			B_max = (B_max > B_javascript) ? B_max : B_javascript;
-			B_max = (B_max > B_python) ? B_max : B_python;
-			B_max = (B_max > B_java) ? B_max : B_java;
-			B_max = (B_max > B_ruby) ? B_max : B_ruby;
-		B_max = (B_max > B_swift) ? B_max : B_swift;
-
-			var B_min = 100;
-			B_min = (B_min < B_javascript) ? B_min : B_javascript;
-			B_min = (B_min < B_python) ? B_min : B_python;
-			B_min = (B_min < B_java) ? B_min : B_java;
-			B_min = (B_min < B_ruby) ? B_min : B_ruby;
-			B_min = (B_min < B_swift) ? B_min : B_swift;
-			 
-			 var c = 'B 학생의 평균 점수는 ' + B_average + ' , 최고 점수는 ' + B_max + ' , 최하 점수는 ' + B_min + ' 입니다.'
-
-		
-			return c;
-		}
-
-		function C_Sudent(C_javascript = 20, C_python= 30, C_java = 60, C_ruby = 50, C_swift = 20){
-			
-			var C_average = (C_javascript + C_python + C_java + C_ruby + C_swift) / 5;
-			
-			var C_max = 0;
-			C_max = (C_max > C_javascript) ? C_max : C_javascript;
-			C_max = (C_max > C_python) ? C_max : C_python;
-			C_max = (C_max > C_java) ? C_max : C_java;
-			C_max = (C_max > C_ruby) ? C_max : C_ruby;
-			C_max = (C_max > C_swift) ? C_max : C_swift;
-
-			var C_min = 100;
-			C_min = (C_min < C_javascript) ? C_min : C_javascript;
-			C_min = (C_min < C_python) ? C_min : C_python;
-			C_min = (C_min < C_java) ? C_min : C_java;
-			C_min = (C_min < C_ruby) ? C_min : C_ruby;
-			C_min = (C_min < C_swift) ? C_min : C_swift;
-			 
-			 var c = 'C 학생의 평균 점수는 ' + C_average + ' , 최고 점수는 ' + C_max + ' , 최하 점수는 ' + C_min + ' 입니다.'
-
-		
-			return c;
-		}
-
-       console.log(A_Sudent());
-       console.log(B_Sudent());
-       console.log(C_Sudent());
+       console.log('A 학생의 평균 점수는 ' + Sudent(90, 80, 50, 40, 10));
+       console.log('B 학생의 평균 점수는 ' + Sudent(90, 30, 100, 50, 20));
+       console.log('C 학생의 평균 점수는 ' + Sudent(20, 30, 60, 50, 20));
 
     </script>
 </head>
