@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+		
+		function Sudent(javascript, python, java, ruby, swift){
+			
+			var average = (javascript + python + java + ruby + swift) / 5;
+			
+			var max = 0;
+			 max = (max > javascript) ? max : javascript;
+			 max = (max > python) ? max : python;
+			 max = (max > java) ? max : java;
+			 max = (max > ruby) ? max : ruby;
+			 max = (max > swift) ? max : swift;
+
+			 var min = 100;
+			 min = (min < javascript) ? min : javascript;
+			 min = (min < python) ? min : python;
+			 min = (min < java) ? min : java;
+			 min = (min < ruby) ? min : ruby;
+			 min = (min < swift) ? min : swift;
+			 
+			 var c = average + ' , 최고 점수는 ' + max + ' , 최하 점수는 ' + min + ' 입니다.'
+
+		
+			return c;
+		}
+
+       console.log('A 학생의 평균 점수는 ' + Sudent(90, 80, 50, 40, 10));
+       console.log('B 학생의 평균 점수는 ' + Sudent(90, 30, 100, 50, 20));
+       console.log('C 학생의 평균 점수는 ' + Sudent(20, 30, 60, 50, 20));
+
+    </script>
+</head>
+<body>
+</body>
+</html>

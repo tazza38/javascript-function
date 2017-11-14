@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+       //
+       // 함수 인자 lo ~ hi 까지 숫자를 모두 더한 값을 리턴 합니다.
+       // 주의 사항 : lo >= hi 일 수도 있음.
+       //
+       function sum(lo, hi) {
+         var result = 0;
+
+		 if(lo < hi){
+		 for (var i = lo; i <= hi; i++ )
+		 {
+			 result += i;
+		 }
+		 } else {
+
+		 if(lo >= hi){
+		 for (var i = hi; i <= lo; i++ )
+		 {
+			 result += i;
+		 }
+
+		 }
+		 }
+         // TODO : 여기에 여러분이 직접 코딩을 해주세요.
+         return result;
+       
+	   }
+	   
+       exepect(sum(1, 2), 3);
+       exepect(sum(1, 1), 1);
+       exepect(sum(1, 100), 5050);
+       exepect(sum(10, 200), 20055);
+       exepect(sum(200, 1000), 480600);
+       exepect(sum(100, 1), 5050);
+       exepect(sum(1000, 200), 480600);
+
+       function exepect(l, r) {
+         if (l === r)
+          console.log('pass');
+         else
+          console.log('fail');
+       }
+    </script>
+</head>
+<body>
+</body>
+</html>
