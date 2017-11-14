@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+      function height() {
+		 너무 어려워서 못하겠습니다 교수님 ㅠㅠ
+		 아무리 생각해도 방법을 못찾겠네요...ㅠㅠ
+        }
+
+      exepect(height('O', 'OOOO\nOOOO'), '2 1 1 1\n1 1 1 1');
+      exepect(height('OOOO', 'OOOO\nOOOO'), '2 2 2 2\n1 1 1 1');
+      exepect(height('OO\nOO', 'OOOO\nOOOO'), '2 2 1 1\n2 2 1 1');
+      exepect(height('OO\nOO\nOO', 'OOOO\nOOOO'), '2 2 1 1\n2 2 1 1\n1 1 0 0');
+      exepect(height('O', 'OOOO\nOOOO', 'OOOO'), '3 2 2 2\n1 1 1 1');
+      exepect(height('OOOO', 'OOOO\nOOOO', 'OOOO'), '3 3 3 3\n1 1 1 1');
+      exepect(height('OO\nOO', 'OOOO\nOOOO', 'OOOO'), '3 3 2 2\n2 2 1 1');
+      exepect(height('OO\nOO\nOO', 'OOOO\nOOOO', 'O\nO\nO\nO'), '3 2 1 1\n3 2 1 1\n2 1 0 0\n1 0 0 0');
+      exepect(height('O', 'O', 'O'), '3');
+
+      function exepect(l, r) {
+        if (l === r)
+         console.log('pass');
+        else
+         console.log('fail');
+      }
+    </script>
+</head>
+<body>
+</body>
+</html>
